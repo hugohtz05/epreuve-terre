@@ -1,15 +1,15 @@
 const argument = process.argv[2] 
 
-let comlpetHour = argument;
+let completHour = argument;
 
-let hourMinute = comlpetHour.split(":");
+let hourMinute = completHour.split(":");
 
 let hour = hourMinute[0];
 let minute = hourMinute[1];
 
 if (hour > 12) {
    hour = hour - 12
-  console.log(hour + ":" + minute + "pm")
+  console.log(hour + ":" + minute)
 }else {
-  console.log(hour + ":" + minute + "am")
+  console.log(hour + ":" + minute)
 }
